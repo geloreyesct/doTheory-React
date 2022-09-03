@@ -7,5 +7,21 @@ const Header = () => {
   );
 }
 
+const Player = () => {
+  return (
+    <div className="player">
+      <span className="player-name">
+        Gelo
+      </span>
+
+      <div className="counter">
+        <button className="counter-action decrement"> - </button>
+        <span className="counter-score">35</span>
+        <button className="counter-action increment"> + </button>
+      </div>
+    </div>
+  );
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Header />);
+root.render(<Player />);
